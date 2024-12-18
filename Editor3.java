@@ -16,6 +16,7 @@ public class Editor3 {
 		String source = args[0];
 		String target = args[1];
 		int n = Integer.parseInt(args[2]);
+		System.out.println("source: " + source);
 		Color[][] sourceImage = Runigram.read(source);
 		Color[][] targetImage = Runigram.read(target);
 		Runigram.setCanvas(sourceImage);
