@@ -143,7 +143,6 @@ public class Runigram {
 
 		for (int rows = 0; rows < newImage.length; rows++){
 			for (int col = 0; col < newImage[0].length; col++){
-				//System.out.println("row = " + rows + " col = " + col);
 				newImage[rows][col] = image[(image.length - 1) - rows][col];
 			}
 		}
@@ -244,7 +243,7 @@ public class Runigram {
 			
 		}
 		Color[][] blendedImage = new Color [sourceHeight][sourceWidth];
-		for (int i = n; i >= 0; i--){
+		for (int i = 0; i <= n; i++){
 			double alpha = ((double) n - i) / n;
 			blendedImage = blend(source, target, alpha);
 			display(blendedImage);
